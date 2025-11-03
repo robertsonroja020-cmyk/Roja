@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px 50px;
+}
+.logo img{
+    height: 70px;
+}
+.navbar{
+    display: flex;
+    align-items:left;
+    background: linear-gradient( lightgreen, lightskyblue);
+    box-shadow: 0 4px 12px gray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'poppins', sans-serif;
+    justify-content: space-between;
+    color: white;
+    margin:20px 50px;
+}
+.navbar a{
+    margin-right: 10px;
+    text-decoration: none;
+}
+.Album{
+    max-width: 900px;
+    margin: 40px auto;
+    background: lightgrey;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px darkblue;
+    text-align: center;
+    text-emphasis-color: white;
+}
+logo{
+    display: flex;
+    margin: 20px auto;
+    width: 100px;
+    height: auto;
+    border-radius: 30px;
+    align-items: left;
+}
+.album-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.album-cover{
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px darkblue;
+}
+.album-detials{
+    flex: 1;
+}
+.album-detials h6{
+    color: lightgreen;
+    margin-bottom: 10px;
+}
+.album-detials p{
+    margin: 5px 0;
+}
+video{
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    height:1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px lightgreen;
+    object-fit: cover;
+}
+.btn{
+    display:inline-block;
+    background-color:lightgreen;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.btn :hover{
+    background-color: darkblue;
+}
+/*/ Track list */
+.song-list{
+    color:lightgreen;
+}
+.song-list h2{
+    color:lightgreen;
+} 
+.song-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+.song-list li{
+    background: lightgray;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+    transition:0.3s;
+}
+.song-list li:hover{
+    background: lightskyblue;
+}
+/* Footer */
+footer{
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    background: darkblue;
+    border-top:solid gray;
+    background-color: blue;
+    color: white;
+    font-size: medium;
+}
+/* News Page */
+.news-page{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+.news-page h5{
+    color: lightgreen;
+    margin-bottom: 10px;
+}
+.news-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+.news-card{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+.news-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 25px darkblue;
+}
+.news-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.news-content{
+    padding: 15px 20px;
+}
+.news-content h6{
+    color: lightgreen;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.news-content p{
+font-size: 15px;
+color: goldenrod;
+line-height: 1.6;
+}
+.read-more{
+    display: inline-block;
+    margin-top: 10px;
+    color:lightgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+.read-more:hover{
+    text-decoration: underline;
+}
+
+.log-section{
+     max-width: 1000px;
+    margin:40px auto;
+    padding: 15px 8%;
+    background-color: whitesmoke;
+}
+.log-container{
+     display:grid;
+    grid-template-rows: 1fr 1fr;
+    gap:none;
+}
+.log-container{
+    grid-template-columns: 1fr;
+}
+.log-box{
+    background-color:whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px lightcyan;
+}
+log-box h6{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight:500;
+    font-size: large;
+    font-style: inherit;font-display: optional;
+}
+label{
+    font-weight: 600;
+    display: block;
+    margin-top: 30px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+button:hover{
+    background-color:yellow;
+    color: #111827;
+}
+.switch{
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #555;
+}
+.switch a:hover{
+    color: darkgoldenrod;
+}
+.songs{
+    text-align: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+    color: lightgreen;
+    font-size: medium;
+    font-weight: 600;
+}
+.form-body, button{
+     margin-top: 15px;
+    color: white;
+    border: none;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.text{
+    text-align: center;
+    display: block;
+    color: darkgoldenrod;
+    font-size: x-large;
+    font-weight: 600;
+    font-display: block;
+    font-style: bold;
+    background-color: white;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:500px) {
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:10px 25px
+    }
+    .navbar{
+     display: flex;
+    align-items:left;
+    background-color: lightblue;
+    box-shadow: 0 4px 12px gray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'poppins', sans-serif;
+    justify-content: space-between;
+    color: white;
+    margin:10px 25px;   
+    }
+    .navbar a{
+        margin-right: 5px;
+        text-decoration: none;
+        font-size: x-small;
+        text-align: right;
+    }
+    .album-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.album-cover{
+    width: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px darkblue;
+}
+.album-detials{
+    flex: 0.5px;
+}
+.album-detials h6{
+    color: lightgreen;
+    margin-bottom: 8px;
+}
+.album-detials p{
+    margin: 5px 2px;
+}
+video{
+    display: block;
+    margin: 20px 10px;
+    width: 95%;
+    height:880px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px lightgreen;
+    object-fit: cover;
+}
+.btn{
+    display:inline-block;
+    background-color:lightgreen;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.btn :hover{
+    background-color: darkblue;
+}
+.Album{
+    max-width: 570px;
+    margin: 20px 20px;
+    background: lightgrey;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px darkblue;
+    text-align: center;
+    text-emphasis-color: white;
+}
+}
